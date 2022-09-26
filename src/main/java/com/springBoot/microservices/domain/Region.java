@@ -1,4 +1,4 @@
-package com.linkedin.springboot.microservices.domain;
+package com.springBoot.microservices.domain;
 
 import lombok.AllArgsConstructor;
 
@@ -12,11 +12,10 @@ public enum Region {
 
     private final String label;
 
-    public static Region findByLabel(String byLabel){
-        for(Region region : Region.values()){
-            if(region.label.equalsIgnoreCase(byLabel)){
+    public static Region findByLabel(String byLabel) {
+        for(Region region: Region.values()) {
+            if (region.label.equalsIgnoreCase(byLabel))
                 return region;
-            }
         }
         return null;
     }

@@ -1,6 +1,5 @@
-package com.linkedin.springboot.microservices.domain;
+package com.springBoot.microservices.domain;
 
 public enum Difficulty {
-
     Easy, Medium, Difficult, Varies
 }

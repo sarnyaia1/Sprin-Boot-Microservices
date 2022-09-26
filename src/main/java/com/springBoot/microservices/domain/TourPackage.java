@@ -1,17 +1,17 @@
-package com.linkedin.springboot.microservices.domain;
+package com.springBoot.microservices.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
+@ToString
+@EqualsAndHashCode
 public class TourPackage {
 
     @Id
@@ -19,4 +19,5 @@ public class TourPackage {
 
     @Column
     private String name;
+
 }

@@ -1,15 +1,14 @@
-package com.linkedin.springboot.microservices.domain;
+package com.springBoot.microservices.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
-@AllArgsConstructor
-@Data
 @NoArgsConstructor
+@Data
+@EqualsAndHashCode
+@ToString
 public class Tour {
 
     @Id
@@ -48,6 +47,15 @@ public class Tour {
     @Enumerated
     private Region region;
 
-    public Tour(String title, String description, String blurb, Integer price, String duration, String bullets, String keywords, TourPackage tourPackage, Difficulty difficulty, Region region) {
+    public Tour(String title,
+                String description,
+                String blurb,
+                Integer price,
+                String duration,
+                String bullets,
+                String keywords,
+                TourPackage tourPackage,
+                Difficulty difficulty,
+                Region region) {
     }
 }
