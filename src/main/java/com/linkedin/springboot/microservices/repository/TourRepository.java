@@ -1,0 +1,9 @@
+package com.linkedin.springboot.microservices.repository;
+
+import com.linkedin.springboot.microservices.domain.Tour;
+import org.springframework.data.repository.CrudRepository;
+
+public interface TourRepository extends CrudRepository<Tour, Integer> {
+
+
+}
