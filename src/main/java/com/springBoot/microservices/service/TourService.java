@@ -9,11 +9,6 @@ import com.springBoot.microservices.repository.TourRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Tour  Service
- *
- * Created by Mary Ellen Bowman
- */
 @Service
 public class TourService {
     private final TourRepository tourRepository;

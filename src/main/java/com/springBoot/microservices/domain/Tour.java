@@ -7,8 +7,6 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @Data
-@EqualsAndHashCode
-@ToString
 public class Tour {
 
     @Id
@@ -57,5 +55,15 @@ public class Tour {
                 TourPackage tourPackage,
                 Difficulty difficulty,
                 Region region) {
+        this.title = title;
+        this.description = description;
+        this.blurb = blurb;
+        this.price = price;
+        this.duration = duration;
+        this.bullets = bullets;
+        this.keywords = keywords;
+        this.tourPackage = tourPackage;
+        this.difficulty = difficulty;
+        this.region = region;
     }
 }

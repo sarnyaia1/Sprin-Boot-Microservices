@@ -10,8 +10,6 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
-@EqualsAndHashCode
 public class TourPackage {
 
     @Id

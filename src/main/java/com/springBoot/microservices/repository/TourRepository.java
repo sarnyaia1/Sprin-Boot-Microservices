@@ -15,10 +15,6 @@ public interface TourRepository extends PagingAndSortingRepository<Tour, Integer
 
     @Override
     @RestResource(exported = false)
-    Iterable<Tour> findAll(Sort sort);
-
-    @Override
-    @RestResource(exported = false)
     <S extends Tour> S save(S entity);
 
     @Override

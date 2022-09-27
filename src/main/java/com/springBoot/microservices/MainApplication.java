@@ -39,9 +39,7 @@ public class MainApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         createTourPackages();
-        long numOfTourPackages = tourPackageService.total();
         createTours(importFile);
-        long numOfTours = tourService.total();
     }
 
 	private void createTourPackages(){
