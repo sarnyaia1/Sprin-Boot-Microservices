@@ -3,3 +3,5 @@
 1. Create base project 
 2. Spring Data JPA
 3. Spring Data query methods
+4. Creating API with Spring Data REST - POSTMAN
+5. Explore HAL browser
