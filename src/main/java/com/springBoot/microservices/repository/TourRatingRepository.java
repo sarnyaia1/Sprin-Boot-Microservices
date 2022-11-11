@@ -1,7 +1,7 @@
 package com.springBoot.microservices.repository;
 
-import com.springBoot.microservices.domain.TourRating;
-import com.springBoot.microservices.domain.TourRatingPk;
+import com.springBoot.microservices.model.TourRating;
+import com.springBoot.microservices.model.TourRatingPk;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;

@@ -1,24 +1,21 @@
 package com.springBoot.microservices.service;
 
-import com.springBoot.microservices.domain.Difficulty;
-import com.springBoot.microservices.domain.Region;
-import com.springBoot.microservices.domain.Tour;
-import com.springBoot.microservices.domain.TourPackage;
+import com.springBoot.microservices.model.Difficulty;
+import com.springBoot.microservices.model.Region;
+import com.springBoot.microservices.model.Tour;
+import com.springBoot.microservices.model.TourPackage;
 import com.springBoot.microservices.repository.TourPackageRepository;
 import com.springBoot.microservices.repository.TourRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class TourService {
+
     private final TourRepository tourRepository;
     private final TourPackageRepository tourPackageRepository;
 
-    @Autowired
-    public TourService(TourRepository tourRepository, TourPackageRepository tourPackageRepository) {
-        this.tourRepository = tourRepository;
-        this.tourPackageRepository = tourPackageRepository;
-    }
     public Tour createTour(String title,
                            String description,
                            String blurb,
